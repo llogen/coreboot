@@ -19,7 +19,7 @@ struct device *dev_find_lapic(unsigned int apic_id)
 	struct device *dev;
 	struct device *result = NULL;
 
-	for (dev = all_devices; dev; dev = dev->next) {
+	for (dev = all_devices; dev; dev = dev->next) {		//this is a test comment
 		if (dev->path.type == DEVICE_PATH_APIC &&
 		    dev->path.apic.apic_id == apic_id) {
 			result = dev;
