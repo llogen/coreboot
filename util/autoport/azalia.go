@@ -9,7 +9,7 @@ type azalia struct {
 }
 
 func (i azalia) Scan(ctx Context, addr PCIDevData) {
-	az := Create(ctx, "hda_verb.c")
+	az := Create(ctx, "hda_verb.c") //comment
 	defer az.Close()
 
 	Add_gpl(az)
