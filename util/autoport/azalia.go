@@ -13,7 +13,7 @@ func (i azalia) Scan(ctx Context, addr PCIDevData) {
 	defer az.Close()
 
 	Add_gpl(az)
-	az.WriteString(
+	az.WriteString( //comment
 		`#include <device/azalia_device.h>
 
 const u32 cim_verb_data[] = {
@@ -40,7 +40,7 @@ const u32 cim_verb_data[] = {
 			fmt.Fprintf(az, "\tAZALIA_PIN_CFG(%d, 0x%02x, 0x%08x),\n",
 				codec.CodecNo, nid, codec.PinConfig[nid])
 		}
-		az.WriteString("\n");
+		az.WriteString("\n")
 	}
 
 	az.WriteString(
