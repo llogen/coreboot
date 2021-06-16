@@ -9,7 +9,7 @@ type azalia struct {
 }
 
 func (i azalia) Scan(ctx Context, addr PCIDevData) {
-	az := Create(ctx, "hda_verb.c")
+	az := Create(ctx, "hda_verb.c") //comment
 	defer az.Close()
 
 	Add_gpl(az)
@@ -40,7 +40,7 @@ const u32 cim_verb_data[] = {
 			fmt.Fprintf(az, "\tAZALIA_PIN_CFG(%d, 0x%02x, 0x%08x),\n",
 				codec.CodecNo, nid, codec.PinConfig[nid])
 		}
-		az.WriteString("\n");
+		az.WriteString("\n")
 	}
 
 	az.WriteString(
