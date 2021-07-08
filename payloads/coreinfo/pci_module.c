@@ -16,7 +16,7 @@ struct pci_devices {
 static struct pci_devices devices[MAX_PCI_DEVICES];
 static int devices_index;
 
-/* Number of entries to show in the list */ //TESTRUNTESTRUN
+/* Number of entries to show in the list */ //TESTRUNTESTRUNTESTRUN
 #define MENU_VISIBLE 16
 
 static int menu_selected = 0;
