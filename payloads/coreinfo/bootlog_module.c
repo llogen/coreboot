@@ -7,7 +7,7 @@
 #define LINES_SHOWN 19
 #define TAB_WIDTH 2
 
-/* Globals that are used for tracking screen state */
+/* Globals that are used for tracking screen state */ //Testcomment
 static char *g_buf = NULL;
 static s32 g_line = 0;
 static s32 g_lines_count = 0;
